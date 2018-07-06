@@ -164,6 +164,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
+
+    // errormeldung wenn kein GPS gefunden wurde.
     public void error(){
 
         android.support.v7.app.AlertDialog alertDialog = new android.support.v7.app.AlertDialog.Builder(MapsActivity.this).create();

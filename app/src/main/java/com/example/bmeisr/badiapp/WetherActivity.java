@@ -81,6 +81,8 @@ public class WetherActivity extends AppCompatActivity {
                     //Lesen des Antwortcodes der Webseite:
                     int code = conn.getResponseCode();
                     //Nun können wir den Lade Dialog wieder ausblenden (die Daten sind ja gelesen)
+
+                    //besser in onPostExecute!!!
                     mDialog.dismiss();
                     //Hier lesen wir die Nachricht der Webseite openweather.orh für den Ort XY:
 
@@ -151,6 +153,7 @@ public class WetherActivity extends AppCompatActivity {
 
 
     }
+    // Errprmeeldung, wenn es kein Internet gibt
     public void error(){
         AlertDialog alertDialog = new AlertDialog.Builder(WetherActivity.this).create();
         alertDialog.setTitle("Alert Dialog");

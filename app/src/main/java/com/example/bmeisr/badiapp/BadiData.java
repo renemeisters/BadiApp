@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class BadiData {
     private static ArrayList<ArrayList<String>> dataFromFile;
 
+    //Liest Dateien aus CSV Datei und returnt diese als ArrayList
     private BadiData(Context c) {
         Scanner scanner = new Scanner(c.getResources().openRawResource(R.raw.badi_ids_dataset));
         scanner.useDelimiter(";");

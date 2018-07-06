@@ -67,6 +67,7 @@ public class BadiDetailsActivity extends AppCompatActivity {
 
     }
 
+    // Erhält die JswnDateien aus der URL und füllt diese in die Liste
     private void getBadiTemp(String url) {
         //Den ArrayAdapter wollen wir später verwenden um die Temperaturen zu speichern
         //angezeigt sollen sie im Format der simple_list_item_1 werden (einem Standard Android Element)
@@ -150,7 +151,7 @@ public class BadiDetailsActivity extends AppCompatActivity {
 
         }
 
-
+    // Knopf um zum WeatherActivity zu gelangen
         public void init(){
             btn_wether = (Button)findViewById(R.id.btn_wether);
             btn_wether.setOnClickListener(new View.OnClickListener() {
@@ -167,6 +168,7 @@ public class BadiDetailsActivity extends AppCompatActivity {
 
         }
 
+        // Knopf um Zur Karte zu gelangen
         public void initMap(){
             btn_map = (Button)findViewById(R.id.btn_map);
             btn_map.setOnClickListener(new View.OnClickListener() {
@@ -185,6 +187,7 @@ public class BadiDetailsActivity extends AppCompatActivity {
 
         }
 
+        // ErrorMeödung wenn kein Internet vorhanden ist.
     public void error(){
         AlertDialog alertDialog = new AlertDialog.Builder(BadiDetailsActivity.this).create();
         alertDialog.setTitle("Alert Dialog");

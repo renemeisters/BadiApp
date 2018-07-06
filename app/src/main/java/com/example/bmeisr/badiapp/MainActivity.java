@@ -31,9 +31,11 @@ public class MainActivity extends AppCompatActivity {
         init();
     }
 
+    // Badis aud BadiData in Lost laden
     private void addBadisToList() {
         ListView badis = (ListView) findViewById(R.id.badiliste);
         badiliste = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
+        // Daten von BadiData
         final ArrayList<ArrayList<String>> allBadis = BadiData.allBadis(getApplicationContext());
         for (ArrayList<String> b : allBadis) {
             badiliste.add(b.get(5)+" - "+b.get(1));
@@ -57,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         badis.setOnItemClickListener(mListClickedHandler);
     }
 
+
+    // Wechseln zum MapsActivity
     public void init(){
         btn_place = (Button)findViewById(R.id.btn_position);
         btn_place.setOnClickListener(new View.OnClickListener() {
