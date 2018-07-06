@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="ch.bbcag.badiapp.BadiDetailsActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+    <TextView
+        android:text="Badi 1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/badiinfos"
+        android:textSize="20dp"
+        />
+
+    <ListView
+        android:id="@+id/badidetails"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"/>
+
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="toWether"
+        android:text="Wegbeschreibung" />
+
+    <Button
+        android:id="@+id/btn_wether"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:onClick="toWether"
+    android:text="Zum Ortswetter" />
+
+
+</LinearLayout>
